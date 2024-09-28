@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDAssignment3_NRV</title>
+    <link rel="stylesheet" type="text/css" href="table.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+
+    <header><h1>Narasimha Reddy Valam <br>002314127</h1></header>
+
+    <table id="candidateTable">
+        <thead>
+            <tr>
+                <th></th>
+                <th>STUDENT</th>
+                <th>ADVISOR</th>
+                <th>AWARD STATUS</th>
+                <th>SEMESTER</th>
+                <th>TYPE</th>
+                <th>BUDGET #</th>
+                <th>PERCENTAGE</th>
+                <th>DELETE</th>
+                <th>EDIT</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" onchange="toggleCheckbox(this)" /><br /><br /><img src="down.png" alt="expand" width="25" onclick="toggleRow(this)" /></td>
+                <td>Narasimha Valam</td>
+                <td>Vishal Chawla</td>
+                <td>Approved</td>
+                <td>Fall</td>
+                <td>TA</td>
+                <td>231001</td>
+                <td>98%</td>
+                <td><button onclick="removeRow(this)" style="display: none;">Delete</button></td> 
+                <td><button onclick="openEditDialog(this)" style="display: none;">Edit</button></td> 
+            </tr>
+            <tr>
+                <td><input type="checkbox" onchange="toggleCheckbox(this)" /><br /><br /><img src="down.png" alt="expand" width="25" onclick="toggleRow(this)" /></td>
+                <td>Mounica Valam</td>
+                <td>Vishal Chawla</td>
+                <td>Approved</td>
+                <td>Spring</td>
+                <td>TA</td>
+                <td>080493</td>
+                <td>95%</td>
+                <td><button onclick="removeRow(this)" style="display: none;">Delete</button></td> 
+                <td><button onclick="openEditDialog(this)" style="display: none;">Edit</button></td> 
+            </tr>
+            <tr>
+                <td><input type="checkbox" onchange="toggleCheckbox(this)" />
+                    <br /><br />
+                    <img src="down.png" alt="expand" width="25" onclick="toggleRow(this)" style="cursor: pointer;" />
+                </td>
+                <td>Jack</td>
+                <td>Vishal Chawla</td>
+                <td>Approved</td>
+                <td>Fall</td>
+                <td>TA</td>
+                <td>100502</td>
+                <td>90%</td>
+                <td><button onclick="removeRow(this)" style="display: none;">Delete</button></td> 
+                <td><button onclick="openEditDialog(this)" style="display: none;">Edit</button></td> 
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="editModal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <h2 id="editModalTitle">Edit Student Details</h2>
+            <p id="studentDetailsText"></p>
+            <button id="updateButton">Update</button>
+            <button id="cancelButton">Cancel</button>
+        </div>
+    </div>
+
+    <br /><br />
+    <button id="submitSelectedButton" disabled>SUBMIT SELECTED AWARDS</button>
+    <button id="addStudentBtn" onclick="addNewCandidate()">Add New Student</button>
+    <nav class="socialmediaicons"></nav>
+    <script src="script.js"></script>
+</body>
+</html>

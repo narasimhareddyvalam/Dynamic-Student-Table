@@ -1,0 +1,172 @@
+header{
+    background-color:lightseagreen;
+}
+
+
+table {
+    padding-top: 30px;
+    width: 65%; 
+    margin-left: 125px;
+    border-collapse: collapse;
+}
+
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid seagreen;
+}
+
+
+.dropDownTextArea {
+    display: none; 
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+#submitButton {
+    background-color: lightgray;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: not-allowed;
+    margin-left: 125px;
+
+}
+
+.newRow {
+    background-color: white;
+}
+
+.highlight {
+    background-color: orange;
+}
+
+.default-row {
+    background-color: white;
+}
+
+#submitSelectedButton:disabled {
+    background-color: gray;
+    color: white;
+    cursor: not-allowed;
+    margin-left: 125px;
+
+}
+
+#submitSelectedButton.enabled {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    margin-left: 125px;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-content {
+    background-color: lightgray;
+    margin: auto; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    width: 40%; 
+    position: relative; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    opacity: 95%;
+    
+    
+}
+
+.modal-content h2 {
+    color: black; 
+    margin-bottom: 15px; 
+}
+
+.modal-content p {
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: black; 
+    margin: 10px 0; 
+}
+
+.modal-content strong {
+    color:black; 
+}
+
+button {
+    background-color: seagreen; 
+    color: white;
+    border: none; 
+    padding: 10px 15px;
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    margin: 5px 2px; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+button:hover {
+    background-color: green; 
+}
+
+.close {
+    color: #aaa; 
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red; 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.extra-info {
+    background-color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+.extra-details {
+    display: table-row;
+}
+
+img {
+    cursor: pointer;
+}
+
+
+h1 {
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600; 
+    color: green; 
+}
+
+h1 {
+    margin-top: 40px; 
+    color: black;
+}
